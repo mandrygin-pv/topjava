@@ -70,7 +70,7 @@ GROUP BY u.id
     - [Реализация assertThat](https://stackoverflow.com/questions/43280250)
 
 
-### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFWE5oSmJFZGZBRlE">REST контроллеры</a>
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFWE5oSmJFZGZBRlE">Принципы REST. REST контроллеры</a>
 #### Apply 7_09_rest_controller.patch
  
 -  <a href="https://ru.wikipedia.org/wiki/JSON">JSON (JavaScript Object Notation)</a>

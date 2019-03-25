@@ -73,8 +73,8 @@ GROUP BY u.id
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFWE5oSmJFZGZBRlE">Принципы REST. REST контроллеры</a>
 #### Apply 7_09_rest_controller.patch
  
--  <a href="https://ru.wikipedia.org/wiki/JSON">JSON (JavaScript Object Notation)</a>
 -  <a href="http://spring-projects.ru/understanding/rest/">Понимание REST</a>
+-  <a href="https://ru.wikipedia.org/wiki/JSON">JSON (JavaScript Object Notation)</a>
 - [15 тривиальных фактов о правильной работе с протоколом HTTP](https://habrahabr.ru/company/yandex/blog/265569/)
 - [10 Best Practices for Better RESTful](http://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 - [Best practices for rest nested resources](https://stackoverflow.com/questions/20951419/what-are-best-practices-for-rest-nested-resources)

@@ -20,9 +20,9 @@ public class MealMapDao implements MealDao {
     }
 
     @Override
-    public void save(Meal meal) {
+    public Meal save(Meal meal) {
         meal.setId(id.incrementAndGet());
-        storage.put(meal.getId(), meal);
+        return storage.put(meal.getId(), meal);
     }
 
     @Override

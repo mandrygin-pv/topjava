@@ -1,10 +1,12 @@
 package ru.javawebinar.topjava.web;
 
 import org.slf4j.Logger;
+import ru.javawebinar.topjava.dao.MealDao;
 import ru.javawebinar.topjava.dao.MealMapDao;
 import ru.javawebinar.topjava.model.Meal;
 import ru.javawebinar.topjava.util.MealsUtil;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +18,13 @@ import static org.slf4j.LoggerFactory.getLogger;
 
 public class MealServlet extends HttpServlet {
     private static final Logger LOG = getLogger(MealServlet.class);
-    private final MealMapDao mealMapDao = new MealMapDao();
+    private MealDao mealMapDao;
+
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+        super.init(config);
+        mealMapDao = new MealMapDao();
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -61,9 +69,6 @@ public class MealServlet extends HttpServlet {
         if (id == 0) {
             LOG.info("save meal");
             mealMapDao.save(meal);
-            for (Meal elem : mealMapDao.getAll()) {
-                System.out.println(elem);
-            }
         } else {
             LOG.info("update meal");
             meal.setId(id);
